@@ -76,11 +76,15 @@ confirmBtn.addEventListener('click',function() {
 
 resetBtn.addEventListener('click',function() {
     popupSec.style.visibility = 'hidden'
-    drawnNumbers = []
+    if (playerStat.balance <= 0) {
+        window.location.reload();
+    } else {
+        drawnNumbers = []
     console.log(`There are ${deckSec.children.length} elements in deck!`)
     for (let i = 0; deckSec.children.length-1; i++) {
         deckSec.children[0].remove()
     }
     checkGameState()
     statEl.textContent = `${playerStat.name}: \$${playerStat.balance}`
+    }
 })
