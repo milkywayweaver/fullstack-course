@@ -1,0 +1,89 @@
+:root {
+    --background: #24273a;
+    --surface: #363a4f;
+    --text: #cad3f5;
+    --subtext: #a5adcb;
+
+    --mauve: #c6a0f6;
+    --pink: #f5bde6;
+    --green: #a6da95;
+    --teal: #8bd5ca;
+    --blue: #8aadf4;
+    --saphire: #7dc4e4;
+    --red: #ed8796;
+    --peach: #f5a97f;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 3rem;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header > h1 {
+    padding: 0;
+    margin: 0.3rem 0;
+}
+header > p {
+    color: var(--subtext)
+}
+#bot-title {
+    background: linear-gradient(45deg,var(--blue) 0%,var(--teal) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#div-interaction > * {
+    border-radius: 5px;
+    border: none;
+    width: 12rem;
+    box-sizing: border-box;
+}
+button {
+    background-color: var(--teal);
+    color: var(--background);
+    font-weight: bold;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+input[type='number'] {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+button:hover {
+    background-color: var(--saphire);
+}
+hr {
+    border: var(--surface) 1px solid;
+}
+section > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+section > div > p {
+    background-color: var(--surface);
+    color: var(--teal);
+    font-size: medium;
+    padding: 0.6rem 1rem 0.5rem 1rem;
+    margin: 0 1.5rem 0 0;
+    border-radius: 5px;
+    text-align: center;
+    text-justify: center;
+    height: 1rem;
+    min-width: 10rem;
+}
+section > div > p:hover {
+    color: var(--blue);
+}
+
+

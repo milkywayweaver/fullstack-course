@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Back Jack</h1>
+        <p>Get the sum as close to 21 as possible without going over it.</p>
+        <div id="deck">
+            <h2 class="card" data-card="0" onclick="openCard(this)">?</h2>
+            <h2 class="card" data-card="1" onclick="openCard(this)">?</h2>
+            <h2 class="card" data-card="2" onclick="openCard(this)">?</h2>
+            <h2 class="card" data-card="3" onclick="openCard(this)">?</h2>
+            <h2 class="card" data-card="4" onclick="openCard(this)">?</h2>
+        </div>
+        <div id="score-block">
+            <h3>Sum</h3>
+            <h3 id="sum"></h3>
+        </div>
+        <button id="btn-confirm" onclick="calculateScore()">Confirm</button>
+        <h3 id="game-over"></h3>
+        <!-- <div id="pop-up">
+            <h3>Game Over</h3>
+            <p id="pop-up-msg">placeholder</p>
+        </div> -->
+        <script src="index.js"></script>
+    </body>
+</html>
