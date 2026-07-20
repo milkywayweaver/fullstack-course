@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Additional Bookmarks",
+    "description": "Additional space for bookmarks.",
+    "icons": {
+        "48": "icon-48.png"
+    },
+    "permissions":["tabs"],
+    "action": {
+        "default_icon": "icon-48.png",
+        "default_popup": "index.html",
+        "default_title": "Additional Bookmarks"
+    }
+}

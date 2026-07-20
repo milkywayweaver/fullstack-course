@@ -1,0 +1,98 @@
+:root {
+    --background: #24273a;
+    --surface: #363a4f;
+    --text: #cad3f5;
+
+    --mauve: #c6a0f6;
+    --pink: #f5bde6;
+    --green: #a6da95;
+    --teal: #8bd5ca;
+    --blue: #8aadf4;
+    --saphire: #7dc4e4;
+    --red: #ed8796;
+    --peach: #f5a97f;
+    --yellow: #eed49f;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 1rem 2rem 1rem 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 350px;
+    max-width: 25vw;
+    box-sizing: border-box;/
+}
+
+h3 {
+    margin-bottom: 0.6rem;
+}
+
+#input-panel {
+    width: 100%;
+}
+input[type='text'] {
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 0.6rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+#input-panel > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 0.6rem;
+    
+    color: var(--surface);
+    font-weight: bold;
+    width: 6rem;
+    box-sizing: border-box;
+}
+#btn-submit {
+    background-color: var(--teal);
+}
+#btn-submit:hover {
+    background-color: var(--saphire);
+}
+#btn-save {
+    background-color: var(--pink);
+}
+#btn-save:hover {
+    background-color: var(--mauve);
+}
+#btn-clear {
+    background-color: var(--yellow);
+}
+#btn-clear:hover {
+    background-color: var(--peach);
+}
+
+hr {
+    border: var(--surface) 1px solid;
+}
+
+#lib-panel {
+    margin-top: 0.6rem;
+}
+ul {
+    list-style-type: "> ";
+    padding-left: 1rem;
+}
+li {
+    margin-bottom: 0.3rem;
+}
+li::marker {
+    color: var(--green)   
+}
+a {
+    color: var(--text);
+    text-decoration: none;
+}
