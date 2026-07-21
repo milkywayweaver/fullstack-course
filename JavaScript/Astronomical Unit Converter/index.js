@@ -4,6 +4,7 @@ const unitEls = document.querySelectorAll('.unit')
 const valueEls = document.querySelectorAll('.value')
 const smallUnitEls = document.querySelectorAll('.unit-small')
 const copyBtns = document.querySelectorAll('.copy-btn')
+const popupEl = document.querySelector('#copy-popup')
 
 const availableUnits = ['pc','ly','au','km','Re']
 let initValue = Number(initValueEl.value)
@@ -26,8 +27,17 @@ for (let i = 0; i< copyBtns.length; i++) {
     copyBtns[i].addEventListener('click',function() {
         navigator.clipboard.writeText(valueEls[i].textContent)
         console.log(`Copied ${valueEls[i].textContent} ${targetUnits[i]}`)
+
+        // Trigger animation
+        popupEl.style.visibility = 'visible'
+        popupEl.classList.remove('popup-anim')
+        void popupEl.offsetWidth;
+        popupEl.classList.add('popup-anim')
     })
 }
+popupEl.addEventListener('animationend',function() {
+    popupEl.style.visibility = 'hidden'
+})
 
 function renderResult() {
     for (let i = 0; i < targetUnits.length; i++) {

@@ -146,3 +146,25 @@ hr {
 .unit-block > .material-symbols-outlined:hover {
     color: var(--saphire);
 }
+
+@keyframes popup {
+    0% {transform: scale(0);}
+    20% {transform: scale(1.1);}
+    30% {transform: scale(1);}
+    80% {transform: scale(1);}
+    100% {transform: scale(0);}
+}
+.popup-anim {
+    animation: popup 1s;
+}
+#copy-popup {
+    visibility: hidden;
+    background-color: var(--surface);
+    padding: 1rem 2rem;
+    border: var(--saphire) 1px solid;
+    border-radius: 5px;
+}
+#copy-popup * {
+    padding: 0;
+    margin: 0;
+}
