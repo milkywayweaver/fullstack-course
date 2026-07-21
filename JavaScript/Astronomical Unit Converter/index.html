@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <span class="material-symbols-outlined" id="logo">planet</span>
+            <div>
+                <h3>Astronomical</h3>
+                <h1>Distance Converter</h1>
+            </div>
+        </header>
+        <section id="panel-interactive">
+            <input id="init-value" type="number" placeholder="Distance to convert..." min="0">
+            <div>
+                <select id="init-unit" name="selected-init-unit">
+                    <option value="pc" selected>pc</option>
+                    <option value="ly">ly</option>
+                    <option value="au">au</option>
+                    <option value="km">km</option>
+                </select>
+            </div>
+        </section>
+        <hr>
+        <section id="panel-information">
+            <div class="unit-block" id="unit-0">
+                <h4 class="unit"></h4>
+                <div>
+                    <h4 class="value"></h4>
+                    <h5 class="unit-small"></h5>
+                </div>
+                <span class="material-symbols-outlined copy-btn">content_copy</span>
+            </div>
+            <div class="unit-block" id="unit-1">
+                <h4 class="unit"></h4>
+                <div>
+                    <h4 class="value"></h4>
+                    <h5 class="unit-small"></h5>
+                </div>
+                <span class="material-symbols-outlined copy-btn">content_copy</span>
+            </div>
+            <div class="unit-block" id="unit-2">
+                <h4 class="unit"></h4>
+                <div>
+                    <h4 class="value"></h4>
+                    <h5 class="unit-small"></h5>
+                </div>
+                <span class="material-symbols-outlined copy-btn">content_copy</span>
+            </div>
+            <div class="unit-block" id="unit-3">
+                <h4 class="unit"></h4>
+                <div>
+                    <h4 class="value"></h4>
+                    <h5 class="unit-small"></h5>
+                </div>
+                <span class="material-symbols-outlined copy-btn">content_copy</span>
+            </div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
